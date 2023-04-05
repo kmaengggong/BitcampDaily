@@ -17,9 +17,9 @@ public class LunchDinnerChoice {
 		};
 		
 		if(choose == "점심")
-			return lunch[((int)Math.random()*10 + 1)];
+			return lunch[((int)Math.random()*lunch.length)];
 		else
-			return dinner[((int)Math.random()*10 + 1)];
+			return dinner[((int)Math.random()*lunch.length)];
 	}
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
